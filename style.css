@@ -198,6 +198,22 @@ body {
 		margin-top: 0;
 	}
 	.block-img-left {
-		width: 90% !important;
+		margin-left: 7%;
+	}
+	.block-text-left {
+		margin: 25px 0 25px 7%;
+	}
+	.block-img-right {
+		margin-left: 7%;
+	}
+	.block-text-right {
+		margin: 25px 0 25px 7%;
+	}
+	.img-res {
+		width: 100%;
+	}
+	.text {
+		width: 90%;
+		margin: 0;
 	}
 }
