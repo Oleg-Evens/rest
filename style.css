@@ -5,6 +5,7 @@
 
 body {
 	background: #edf1ff;
+	overflow-x: hidden;
 }
 
 .header {
@@ -122,7 +123,6 @@ body {
 }
 
 .line-img {
-	display: none;
 	position: absolute;
 	left: 0;
 	top: 180px;
@@ -152,7 +152,11 @@ body {
 
 .main-img {
 	width: 90%;
-	margin: 0 5%;
+	margin: 25px 5%;
+}
+
+.block-img-right-hidden {
+	display: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -186,10 +190,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-left: 15%;
+		margin-left: 0 !important;
 	}
 	.ball {
 		margin: 0 !important;
+		width: 225px;
 	}
 	.b1 {
 		margin-top: 0;
@@ -204,7 +209,7 @@ body {
 		margin: 25px 0 25px 7%;
 	}
 	.block-img-right {
-		margin-left: 7%;
+		display: none;
 	}
 	.block-text-right {
 		margin: 25px 0 25px 7%;
@@ -214,6 +219,13 @@ body {
 	}
 	.text {
 		width: 90%;
-		margin: 0;
+		margin-left: 15px;
+	}
+	.block-img-right-hidden {
+		display: block;
+		margin-left: 7%;
+	}
+	.ads_plus {
+		margin: 25px 0;
 	}
 }
