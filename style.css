@@ -129,6 +129,7 @@ body {
 }
 
 .ball {
+	display: none;
 	margin: 0 7.5px;
 }
 
@@ -214,16 +215,16 @@ body {
 		margin-left: 0;
 	}
 	.block-img-left {
-		margin-left: 7%;
+		margin-left: 0;
 	}
 	.block-text-left {
-		margin: 25px 7% 25px 7%;
+		margin: 25px 0 25px 0;
 	}
 	.block-img-right {
 		display: none;
 	}
 	.block-text-right {
-		margin: 25px 7% 25px 7%;
+		margin: 25px 0 25px 0;
 	}
 	.img-res {
 		width: 360px;
@@ -235,7 +236,7 @@ body {
 	}
 	.block-img-right-hidden {
 		display: block;
-		margin-left: 7%;
+		margin-left: 0;
 	}
 	.ads_plus {
 		margin: 25px 0;
@@ -245,6 +246,13 @@ body {
 	}
 	.ball {
 		text-align: center;
+		display: block;
+	}
+	.b1 {
+		margin-top: 0;
+	}
+	.b2 {
+		margin-top: 0;
 	}
 }
 
@@ -263,21 +271,12 @@ body {
 		margin: 0 !important;
 		width: 225px;
 	}
-	.b1 {
-		margin-top: 0;
-	}
-	.b2 {
-		margin-top: 0;
-	}
 	.center-text {
 		margin-left: -30px;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	.text {
-		width: 90%;
-	}
 	.center-text {
 		margin-left: 20px;
 	}
