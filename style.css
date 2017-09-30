@@ -65,8 +65,9 @@
 	font-size: 13px;
 	color: #666666;
 	margin-left: 15px;
-	width: 175px;
+	width: 180px;
 	margin-top: -5px;
+	text-align: justify;
 }
 
 .description {
@@ -137,11 +138,11 @@
 }
 
 .line-img {
-	position: absolute;
-	right: 25%;
-	top: 135px;
+	width: 1620px;
+	margin-top: -50px;
 	z-index: -1;
 	margin-bottom: 50px;
+	margin-left: -605px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -176,6 +177,7 @@ body {
 }
 
 .bottom-t {
+	margin-top: -15px;
 	margin-bottom: 100px;
 }
 
@@ -204,7 +206,163 @@ body {
 	padding-bottom: 25px;
 }
 
+.r1 {
+	margin-top: -30px;
+}
+
+.t1 {
+	margin-top: 7px;
+}
+
+.r2 {
+	margin-top: 80px;
+}
+
+.t2 {
+	margin-top: 80px;
+}
+
+.r3 {
+	margin-top: 55px;
+}
+
+.t3 {
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.r4 {
+	margin-left: -20px;
+	margin-top: -15px;
+}
+
+.r5 {
+	margin-top: 30px;
+}
+
+.r6 {
+	margin-top: 25px;
+}
+
+.t5 {
+	margin-top: -50px;
+}
+
+.r7 {
+	margin-top: -25px;
+}
+
+.r8 {
+	margin-top: -50px;
+}
+
+.r9 {
+	margin-left: 20px;
+}
+
+.t6 {
+	margin-left: -15px;
+}
+
+.t7 {
+	margin-top: -35px;
+}
+
+.t9 {
+	margin-top: 25px;
+}
+
+.w1 {
+	margin-top: -90px;
+}
+
+.w2 {
+	margin-top: -70px;
+}
+
+.w3 {
+	margin-top: -50px;
+}
+
+.text-q {
+	display: flex;
+	justify-content: space-between;
+	width: 640px;
+	font-family: Verdana;
+	font-size: 16px;
+	color: #666666;
+	margin-left: 25px;
+}
+
 @media screen and (max-width: 1000px) {
+	.text-d {
+		display: none;
+	}
+	.r1 {
+		margin-top: -0;
+	}
+
+	.t1 {
+		margin-top: 0;
+	}
+
+	.r2 {
+		margin-top: 0;
+	}
+
+	.t2 {
+		margin-top: 0;
+	}
+
+	.r3 {
+		margin-top: 0;
+	}
+
+	.t3 {
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.r4 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.r5 {
+		margin-top: 0;
+	}
+
+	.r6 {
+		margin-top: 0;
+	}
+
+	.t5 {
+		margin-top: 0;
+	}
+
+	.r7 {
+		margin-top: 0;
+	}
+
+	.r8 {
+		margin-top: 25px;
+	}
+
+	.r9 {
+		margin-left: 0;
+	}
+
+	.t6 {
+		margin-left: 0;
+	}
+
+	.t7 {
+		margin-top: 0;
+	}
+
+	.t9 {
+		margin-top: 0;
+	}
 	.main-container {
 		min-width: 200px;
 		display: flex;
@@ -248,7 +406,6 @@ body {
 	}
 	.text {
 		width: 300px;
-		margin: 0 auto;
 	}
 	.block-img-right-hidden {
 		display: block;
@@ -261,8 +418,9 @@ body {
 		margin-left: 50px !important;
 	}
 	.ball {
-		text-align: center;
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.b1 {
 		margin-top: 0;
@@ -295,9 +453,6 @@ body {
 		margin: 0;
 		width: 225px;
 		margin-top: 35px;
-	}
-	.center-text {
-		margin-left: -30px;
 	}
 	.text {
 		font-size: 13px;
