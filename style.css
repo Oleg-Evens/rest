@@ -217,13 +217,13 @@ body {
 		margin-left: 7%;
 	}
 	.block-text-left {
-		margin: 25px 0 25px 7%;
+		margin: 25px 7% 25px 7%;
 	}
 	.block-img-right {
 		display: none;
 	}
 	.block-text-right {
-		margin: 25px 0 25px 7%;
+		margin: 25px 7% 25px 7%;
 	}
 	.img-res {
 		width: 360px;
