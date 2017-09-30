@@ -8,6 +8,10 @@ body {
 	overflow-x: hidden;
 }
 
+.q {
+	width: 100%;
+}
+
 .header-q {
 	display: flex; 
 	display: -moz-box; 
@@ -191,6 +195,7 @@ body {
 		align-items: center;
 	}
 	.container {
+		margin: 0;
 		width: 90%;
 	}
 	.img-res {
@@ -250,7 +255,11 @@ body {
 	}
 	.header-q {
 		display: flex;
+		margin: 0 auto;
 		width: 400px;
+	}
+	.imgw {
+		margin-left: 15px;
 	}
 }
 
@@ -320,5 +329,8 @@ body {
 	}
 	.img-res {
 		width: 100%;
+	}
+	.imgw {
+		margin-left: 20px;
 	}
 }
