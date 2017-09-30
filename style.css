@@ -8,7 +8,7 @@ body {
 	overflow-x: hidden;
 }
 
-.header {
+.header-q {
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
@@ -238,7 +238,7 @@ body {
 		margin: 25px 0 25px 7%;
 	}
 	.img-res {
-		width: 100%;
+		max-width: 365px;
 	}
 	.text {
 		width: 90%;
