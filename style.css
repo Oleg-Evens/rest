@@ -153,6 +153,18 @@ body {
 	z-index: -1;
 }
 
+@media screen and (max-width: 1200px) {
+	.line-img {
+		right: 10%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.line-img {
+		right: 0%;
+	}
+}
+
 .rel {
 	position: relative;
 }
