@@ -5,6 +5,7 @@
 
 body {
 	background: #edf1ff;
+	overflow-x: hidden;
 }
 
 .header-q {
@@ -267,13 +268,22 @@ body {
 	.center-text {
 		margin-left: -30px;
 	}
+	.block-img-left {
+		width: 90%;
+	}
+	.block-text-left {
+		width: 90%;
+	}
+	.block-text-right {
+		width: 90%;
+	}
+	.block-img-right-hidden {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 500px) {
-	.text {
-		width: 90%;
-	}
 	.center-text {
-		margin-left: 20px;
+		margin-left: 20px !important;
 	}
 }
