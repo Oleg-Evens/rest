@@ -1,13 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	background: #edf1ff;
-	overflow-x: hidden;
-}
-
 .q {
 	width: 100%;
 }
@@ -158,6 +148,16 @@ body {
 	.line-img {
 		right: 10%;
 	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #edf1ff;
+	overflow-x: hidden;
 }
 
 @media screen and (max-width: 1200px) {
