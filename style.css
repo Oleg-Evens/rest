@@ -200,6 +200,10 @@ body {
 	transform: rotate(80deg);
 }
 
+.kers {
+	padding-bottom: 25px;
+}
+
 @media screen and (max-width: 1000px) {
 	.main-container {
 		min-width: 200px;
