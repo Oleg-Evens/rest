@@ -5,6 +5,7 @@
 
 body {
 	background: #edf1ff;
+	overflow-x: hidden;
 }
 
 .header-q {
@@ -143,7 +144,7 @@ body {
 
 .line-img {
 	position: absolute;
-	left: -175px;
+	right: 20%;
 	top: 165px;
 	z-index: -1;
 }
@@ -184,18 +185,17 @@ body {
 
 @media screen and (max-width: 1000px) {
 	.main-container {
-		min-width: 365px;
+		min-width: 200px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.container {
-		max-width: 365px;
-		margin: 0 5%;
+		width: 90%;
+		margin-right: -2%;
 	}
 	.img-res {
-		max-width: 365px;
-		margin: 0;
+		width: 100%;
 	}
 	.transition {
 		display: none;
@@ -278,5 +278,16 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-
+	.text {
+		width: auto;
+	}
+	.caption {
+		font-size: 20px;
+	}
+	.bottom-t {
+		margin-left: -1%;
+	}
+	.center-text {
+		margin-left: 15px;
+	}
 }
