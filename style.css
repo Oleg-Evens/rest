@@ -114,7 +114,7 @@
 
 .ads_plus {
 	text-align: center;
-	margin: 215px 0 120px 0;
+	margin: 210px 0 120px 0;
 	margin-left: -30px;
 }
 
@@ -143,10 +143,10 @@
 
 .line-img {
 	width: 1620px;
-	margin-top: -70px;
+	margin-top: -40px;
 	z-index: -1;
 	margin-bottom: 50px;
-	margin-left: -580px;
+	margin-left: -635px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -194,7 +194,7 @@ body {
 }
 
 .main-img {
-	width: 100%;
+	width: 86%;
 	margin: 25px 5%;
 }
 
@@ -319,11 +319,11 @@ body {
 .text-q {
 	display: flex;
 	justify-content: space-between;
-	width: 640px;
+	width: 630px;
 	font-family: Verdana;
 	font-size: 16px;
 	color: #666666;
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .q4 {
@@ -426,6 +426,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+	.main-img {
+		width: 100% !important;
+	}
 	.q4 {
 		margin-left: -0;
 		margin-top: 0;
