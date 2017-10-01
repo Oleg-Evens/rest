@@ -431,18 +431,26 @@ body {
 		margin-left: 35%;
 	}
 	.container {
-		width: 800px;
+		width: 860px;
 	}
 	.text {
-		width: 500px;
+		width: 475px;
 	}
 	.block-text-left {
-		margin-left: 35px;
+		margin-left: 45px;
 	}
 	.block-img-right {
-		margin-left: 35px;
+		margin-left: 45px;
 	}
 
+}
+
+@media screen and (max-width: 1200px) {
+	.transition {
+		margin-left: auto;
+		margin-left: right;
+		width: 400px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
