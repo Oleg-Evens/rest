@@ -426,6 +426,25 @@ body {
 	margin-top: 20px;
 }
 
+@media screen and (max-width: 1400px) {
+	.transition {
+		margin-left: 35%;
+	}
+	.container {
+		width: 800px;
+	}
+	.text {
+		width: 500px;
+	}
+	.block-text-left {
+		margin-left: 35px;
+	}
+	.block-img-right {
+		margin-left: 35px;
+	}
+
+}
+
 @media screen and (max-width: 1000px) {
 	.main-img {
 		width: 100% !important;
