@@ -59,7 +59,7 @@ $(document).ready(function() {
 	});
 	setInterval(function(){
 		if(body.scrollTop() > 0) {
-			$('.circle').css('opacity','0.5');
+			$('.circle').css('opacity','1');
 		} else {
 			$('.circle').css('opacity','0');
 		}
@@ -99,6 +99,18 @@ $(document).ready(function() {
 		$('.blackout').css('display','block');
 		$('.modal-window').css('display','block');
 		$('.code').text('Код товара: 172304');
+	});
+	$('.more1').click(function(){
+		body.stop().animate({scrollTop: $(".f1").offset().top}, 1000, 'swing', function() { });
+	});
+	$('.more2').click(function(){
+		body.stop().animate({scrollTop: $(".f2").offset().top}, 1000, 'swing', function() { });
+	});
+	$('.more3').click(function(){
+		body.stop().animate({scrollTop: $(".f3").offset().top}, 1000, 'swing', function() { });
+	});
+	$('.more4').click(function(){
+		body.stop().animate({scrollTop: $(".f4").offset().top}, 1000, 'swing', function() { });
 	});
 });
 
