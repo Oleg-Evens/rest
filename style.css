@@ -270,12 +270,15 @@ b {
 }
 
 .content-flash {
+	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	margin: 50px 0;
 }
 
 .full-desc {
 	display: flex;
+	width: 900px;
 }
 
 .character {
@@ -450,13 +453,13 @@ b {
 }
 
 .span {
-	height: 30px;
+	height: 26px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	border: 3px gray solid;
 	padding: 5px;
-	border-radius: 3px;
+	border-radius: 7px;
 	cursor: pointer;
 	display: none;
 }
@@ -575,7 +578,10 @@ b {
 	font-size: 20px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
+	.full-desc {
+		width: auto;
+	}
 	.container {
 		width: 90%;
 	}
