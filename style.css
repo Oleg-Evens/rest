@@ -426,6 +426,7 @@ b {
 }
 
 .span {
+	display: none;
 	height: 30px;
 	display: flex;
 	flex-direction: column;
@@ -470,6 +471,9 @@ b {
 }
 
 @media screen and (max-width: 1000px) {
+	.span {
+		display: block;
+	}
 	.main-cards {
 		margin: 0;
 	}
