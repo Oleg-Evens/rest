@@ -148,6 +148,7 @@ b {
 	margin-right: 5px;
 	border: 1px #000 solid;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 .q15 {
