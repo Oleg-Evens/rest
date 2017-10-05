@@ -76,6 +76,10 @@ b {
 	cursor: pointer;
 }
 
+.black {
+	color: black !important;
+}
+
 .item-header:hover { 
 	color: #e5493a;
 }
