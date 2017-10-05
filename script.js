@@ -7,27 +7,30 @@ $(document).ready(function() {
 $(document).ready(function() {
 	var body = $("html, body");
 	$("#d1").click(function () {
-		body.stop().animate({scrollTop: $(".m1").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m1").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d2").click(function () {
-		body.stop().animate({scrollTop: $(".m2").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m2").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d3").click(function () {
-		body.stop().animate({scrollTop: $(".m3").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m3").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d4").click(function () {
-		body.stop().animate({scrollTop: $(".m4").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m4").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d5").click(function () {
-		body.stop().animate({scrollTop: $(".m5").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m5").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d6").click(function () {
-		body.stop().animate({scrollTop: $(".m6").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m6").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d7").click(function () {
-		body.stop().animate({scrollTop: $(".m7").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m7").offset().top-75}, 1000, 'swing', function() { });
 	});
 	$("#d8").click(function () {
-		body.stop().animate({scrollTop: $(".m8").offset().top}, 1000, 'swing', function() { });
+		body.stop().animate({scrollTop: $(".m8").offset().top-75}, 1000, 'swing', function() { });
+	});
+	$("#d9").click(function () {
+		body.stop().animate({scrollTop: $(".m9").offset().top-75}, 1000, 'swing', function() { });
 	});
 });
