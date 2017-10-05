@@ -94,7 +94,6 @@ b {
 }
 
 .parent-img-flash {
-	background: #fff;
 	height: 280px;
 }
 
@@ -209,6 +208,8 @@ b {
 
 .desc-place {
 	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .where_plus {
@@ -283,6 +284,7 @@ b {
 }
 
 .character {
+	width: 400px;
 	margin-left: 50px;
 }
 
@@ -527,7 +529,7 @@ b {
 	height: 300px;
 }
 
-.send-input input {
+input {
 	border: none;
 	width: 300px;
 	height: 20px;
@@ -559,6 +561,10 @@ b {
 	color: #000;
 }
 
+.ers {
+	font-size: 16px !important;
+}
+
 .blackout {
 	display: none;
 	position: fixed;
@@ -569,6 +575,10 @@ b {
 	background: #000;
 	opacity: 0.75;
 	z-index: 5;
+}
+
+.rer {
+	background: black !important;
 }
 
 .text-w {
@@ -602,6 +612,10 @@ b {
 }
 
 @media screen and (max-width: 1000px) {
+	.character {
+		width: 200px;
+		margin-left: 50px;
+	}
 	.circle {
 		width: 50px;
 		height: 50px;
@@ -715,6 +729,9 @@ b {
 	}
 	.text-w {
 		text-align: center;
+	}
+	.ers {
+		font-size: 15px !important;
 	}
 }
 

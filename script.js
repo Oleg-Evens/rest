@@ -79,6 +79,7 @@ $(document).ready(function() {
 	$('.blackout').click(function(){
 		$('.blackout').css('display','none');
 		$('.modal-window').css('display','none');
+		$('.time').remove();
 	})
 	$('.b1').click(function(){
 		$('.blackout').css('display','block');
@@ -99,6 +100,11 @@ $(document).ready(function() {
 		$('.blackout').css('display','block');
 		$('.modal-window').css('display','block');
 		$('.code').text('Код товара: 172304');
+	});
+	$('.b5').click(function(){
+		$('.blackout').css('display','block');
+		$('.modal-window').css('display','block');
+		$('.code').append('<input class="time" type="text" placeholder="Введите код товара">');
 	});
 	$('.more1').click(function(){
 		body.stop().animate({scrollTop: $(".f1").offset().top}, 1000, 'swing', function() { });
