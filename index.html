@@ -1,3 +1,9 @@
+<?php 
+	if(isset($_POST['buy'])) {
+		mail("dorwe@mail.ru","New add","code:".$_POST['data1']."\ntel:123412344124".$_POST['data2']."\ntel:123412344124".$_POST['data2']);
+		header('location: index.php');
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +15,7 @@
 	<script src="script.js"></script>
 </head>
 <body>
-<?php 
 
-
-	mail("oleg.dorianition@yandex.ru", "Телефон: 112412423414",\n "Код товара:"); 
-
-?>
 <div class="container-fluid bg3 m1 main-header">
 	<div class="center-q">
 		<div class="header">
@@ -22,7 +23,7 @@
 				<div class="line"></div>
 				<div class="line"></div>
 				<div class="line"></div>
-			</div>
+			</div>	
 			<div id="d3" class="item-header">Описание</div>
 			<div id="d4" class="item-header">Применение</div>
 			<div id="d6" class="item-header">Доставка</div>
@@ -44,8 +45,8 @@
 </div>
 <div class="bg1 m2">
 	<div class="container">
-		<div class="caption black">Распродажа мощных налобных фонарей</div>
-		<div class="p_caption black">При 100% предоплате скидка 5%</div>
+		<div class="caption black">Распродажа мощных налобных фонарей "LED"</div>
+		<div class="p_caption black">Акция! Скидка 2000р , также при 100% предоплате скидка 5%</div>
 		<div class="main-cards">
 			<div class="cards">
 				<div class="card more1">
@@ -77,7 +78,7 @@
 			</div>
 			<div class="cards">
 				<div class="card more3">
-					<div class="card-place"><div><img class="w90 card-img" src="images/l790-2.jpg"></div></div>
+					<div class="card-place"><div><img class="w90 card-img" src="images/l790-1.jpg"></div></div>
 					<div class="card-block">
 						<div class="name">HL-790</div>
 						<div class="desc">
@@ -161,6 +162,47 @@
 		</div>
 	</div>
 </div>
+<script>
+	$(document).ready(function(){
+		$('.send').click(function(){
+			var data1 = $('.data1').val();
+			var data2 = $('.data2').val();
+			var data3 = $('.data3').text();
+			$.ajax({
+				type: 'post',
+				url: 'mail.php',
+				data: {data1:data1,data2:data2,data3:data3},
+				success: function(data) {
+
+				}
+			})
+			setTimeout(function(){
+				$('.blackout').css('display','none');
+				$('.modal-window').css('display','none');
+				$('.modal-sogl').css('display','none');
+				$('.modal-conf').css('display','none');
+			},1000);
+		});
+		$('.send-q').click(function(){
+			alert('working');
+			var data6 = $('.data6').val();
+			var data5 = $('.data5').val();
+			var data4 = $('.time').val();
+			$.ajax({
+				type: 'post',
+				url: 'mail2.php',
+				data: {data1:data6,data2:data5,data3:data4},
+				success: function(data) {
+					alert(data);
+				}
+			})
+			setTimeout(function(){
+				$('.blackout').css('display','none');
+				$('.modal-window-q').css('display','none');
+			},1000);
+		});
+	});
+</script>
 <div class="container-fluid bg3 m5">
 	<div class="cont-flash">
 		<div class="container_3">
@@ -210,7 +252,7 @@
 									<div class="button b1">Заказать</div>
 								</div>
 								<div>
-									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(скидка <b class="red">45%</b>)</div>
+									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(<b class="red">При 100% предоплате скидка 5%</b>)</div>
 								</div>
 								<div>
 									<div class="text-w">Код товара: 172301</div>
@@ -263,7 +305,7 @@
 									<div class="button b2">Заказать</div>
 								</div>
 								<div>
-									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(скидка <b class="red">45%</b>)</div>
+									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(<b class="red">При 100% предоплате скидка 5%</b>)</div>
 								</div>
 								<div>
 									<div class="text-w">Код товара: 172302</div>
@@ -317,7 +359,7 @@
 									<div class="button b3">Заказать</div>
 								</div>
 								<div>
-									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(скидка <b class="red">45%</b>)</div>
+									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(<b class="red">При 100% предоплате скидка 5%</b>)</div>
 								</div>
 								<div>
 									<div class="text-w">Код товара: 172303</div>
@@ -370,7 +412,7 @@
 									<div class="button b4">Заказать</div>
 								</div>
 								<div>
-									<div class="text-w">Цена: <b class=" t456 red">2500р.</b>(скидка <b class="red">45%</b>)</div>
+									<div class="text-w"><b class="erl">Цена:</b> <b class=" t456 red">2500р.</b>(<b class="red">При 100% предоплате скидка 5%</b>)</div>
 								</div>
 								<div>
 									<div class="text-w">Код товара: 172304</div>
@@ -501,10 +543,18 @@
 <div class="circle"></div>
 <div class="modal-window">
 	<div class="mw">
-		<div class="send-input"><input class="data1" type="text" placeholder="Ваше имя"></div>
-		<div class="send-input"><input class="data2 send-tel" type="text" placeholder="Номер телефона"></div>
-		<div class="data3 send-code code"></div>
+		<div class="send-input"><input name="data1" class="data1" type="text" placeholder="Ваше имя"></div>
+		<div class="send-input"><input name="data2" class="data2 send-tel" type="text" placeholder="Номер телефона"></div>
+		<div name="data3" class="data3 send-code code1"></div>
 		<div class="send">Заказать</div>
+	</div>
+</div>
+<div class="modal-window-q">
+	<div class="mw-q">
+		<div class="send-input-q"><input name="data5" class="data5" type="text" placeholder="Ваше имя"></div>
+		<div class="send-input-q"><input name="data6" class="data6 send-tel" type="text" placeholder="Номер телефона"></div>
+		<div name="data4" class="data4"><input class="time" type="text" placeholder="Введите код товара"></div>
+		<div class="send-q">Заказать</div>
 	</div>
 </div>
 <div class="blackout"></div>

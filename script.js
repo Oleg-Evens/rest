@@ -80,34 +80,41 @@ $(document).ready(function() {
 	$('.blackout').click(function(){
 		$('.blackout').css('display','none');
 		$('.modal-window').css('display','none');
-		$('.time').remove();
 		$('.modal-sogl').css('display','none');
 		$('.modal-conf').css('display','none');
+		$('.modal-window-q').css('display','none');
 	})
 	$('.b1').click(function(){
+		$('.data4').css('visibility','hidden');
+		$('.data3').css('display','block');
 		$('.blackout').css('display','block');
 		$('.modal-window').css('display','block');
-		$('.code').text('Код товара: 172301');
+		$('.data3').text('Код товара: 172301');
 	});
 	$('.b2').click(function(){
+		$('.data4').css('visibility','hidden');
+		$('.data3').css('display','block');
 		$('.blackout').css('display','block');
 		$('.modal-window').css('display','block');
-		$('.code').text('Код товара: 172302');
+		$('.data3').text('Код товара: 172302');
 	});
 	$('.b3').click(function(){
+		$('.data4').css('visibility','hidden');
+		$('.data3').css('display','block');
 		$('.blackout').css('display','block');
 		$('.modal-window').css('display','block');
-		$('.code').text('Код товара: 172303');
+		$('.data3').text('Код товара: 172303');
 	});
 	$('.b4').click(function(){
+		$('.data4').css('visibility','hidden');
+		$('.data3').css('display','block');
 		$('.blackout').css('display','block');
 		$('.modal-window').css('display','block');
-		$('.code').text('Код товара: 172304');
+		$('.data3').text('Код товара: 172304');
 	});
 	$('.b5').click(function(){
 		$('.blackout').css('display','block');
-		$('.modal-window').css('display','block');
-		$('.code').append('<input class="time" type="text" placeholder="Введите код товара">');
+		$('.modal-window-q').css('display','block');
 	});
 	$('.more1').click(function(){
 		body.stop().animate({scrollTop: $(".f1").offset().top}, 1000, 'swing', function() { });
