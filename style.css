@@ -830,7 +830,36 @@ input {
 }
 
 .text-w {
+	position: relative;
 	font-size: 25px;
+}
+
+.t456 {
+	position: relative;
+}
+
+.t456::after {
+	content: url(images/price.png);
+	position: absolute;
+	top: -20px;
+	left: -2px;
+}
+
+.price {
+	position: relative;
+	top: -50px;
+	left: 74px;
+
+}
+
+.price::after {
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 1px;
+	background: #000;
+	top: 14px;
+	left: 0;
 }
 
 .send-code {
@@ -921,9 +950,58 @@ input {
 	.main-desc-q {
 		width: 375px;
 	}
+	.content-flash {
+		width: 90%;
+	}
+	.flashlight {
+		width: 100%;
+	}
+	.t456 {
+		margin-top: 15px;
+	}
+	.price {
+		position: relative;
+		top: -77px;
+		left: 74px;
+	}
+	.price::after {
+		content: '';
+		position: absolute;
+		width: 75px;
+		height: 1px;
+		background: #000;
+		top: 14px;
+		left: 0;
+	}
+	.text-w {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
+	.text-w {
+		font-size: 25px;
+	}
+	.content-flash {
+		width: 100%;
+	}
+	.price {
+		position: relative;
+		top: -80px;
+		left: -8px;
+	}
+	.price::after {
+		content: '';
+		position: absolute;
+		width: 75px;
+		height: 1px;
+		background: #000;
+		top: 14px;
+		left: 95px;
+	}
+	.text-w {
+		margin-top: 35px;
+	}
 	.modal-conf {
 		padding: 15px;
 	}
@@ -950,10 +1028,10 @@ input {
 	}
 	.span {
 		display: flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
+		display: -moz-box; 
+		display: -ms-flexbox; 
+		display: -webkit-box; 
+		display: -webkit-flex;
 	}
 	.header {
 		align-items: flex-start;
@@ -1014,10 +1092,10 @@ input {
 	.flashlight {
 		width: 275px;
 		display: flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
+		display: -moz-box; 
+		display: -ms-flexbox; 
+		display: -webkit-box; 
+		display: -webkit-flex;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -1091,6 +1169,20 @@ input {
 }
 
 @media screen and (max-width: 700px) {
+	.price {
+		position: relative;
+		top: -50px;
+		left: -38px;
+	}
+	.price::after {
+		content: '';
+		position: absolute;
+		width: 75px;
+		height: 1px;
+		background: #000;
+		top: 14px;
+		left: 110px;
+	}
 	.col-flash {
 		width: 100%;
 		flex-direction: column;
@@ -1099,10 +1191,10 @@ input {
 	.flashlight {
 		width: 100%;
 		display: flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
+		display: -moz-box; 
+		display: -ms-flexbox; 
+		display: -webkit-box; 
+		display: -webkit-flex;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -1117,6 +1209,20 @@ input {
 
 
 @media screen and (max-width: 500px) {
+	.price {
+		position: relative;
+		top: -80px;
+		left: -8px;
+	}
+	.price::after {
+		content: '';
+		position: absolute;
+		width: 75px;
+		height: 1px;
+		background: #000;
+		top: 14px;
+		left: 96px;
+	}
 	.where_minus {
 		flex-direction: column;
 		align-items: center;
