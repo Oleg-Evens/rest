@@ -58,7 +58,8 @@ $(document).ready(function() {
 		body.stop().animate({scrollTop: 0 }, 1000, 'swing', function() { });
 	});
 	var timer = setInterval(function(){
-		if(body.scrollTop() > 0) {
+		console.log(body.scrollTop());
+		if($(document).scrollTop() > 0) {
 			$('.circle').css('opacity','1');
 		} else {
 			$('.circle').css('opacity','0');
