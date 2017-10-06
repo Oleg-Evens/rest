@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php 
-	mail("joecool@example.com", "My Subject", "Line 1\nLine 2\nLine 3"); 
+	mail("oleg.dorianition@yandex.ru", "My Subject", "Line 1\nLine 2\nLine 3"); 
 ?>
 <div class="container-fluid bg3 m1 main-header">
 	<div class="center-q">
