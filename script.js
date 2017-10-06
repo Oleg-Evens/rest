@@ -57,13 +57,13 @@ $(document).ready(function() {
 	$(".circle").click(function () {
 		body.stop().animate({scrollTop: 0 }, 1000, 'swing', function() { });
 	});
-	setInterval(function(){
+	var timer = setInterval(function(){
 		if(body.scrollTop() > 0) {
 			$('.circle').css('opacity','1');
 		} else {
 			$('.circle').css('opacity','0');
 		}
-	},250);
+	},1000);
 	var num = 0;
 	$('.span').click(function(){
 		if(num == 0) {
