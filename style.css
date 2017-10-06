@@ -563,6 +563,10 @@ a:hover {
 	color: gray;
 }
 
+.eren {
+	margin-left: 15px;
+}
+
 .footer {
 	display: flex; 
 	display: -moz-box; 
@@ -583,7 +587,8 @@ a:hover {
 	display: -webkit-box; 
 	display: -webkit-flex;
 	justify-content: space-between;
-	width: 58%;
+	width: 57%;
+	margin-left: 15px;
 }
 
 .policy_conf {
@@ -979,6 +984,9 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
+	.footer-main {
+		margin-left: 0;
+	}
 	.text-w {
 		font-size: 25px;
 	}
@@ -1122,6 +1130,8 @@ input {
 	}
 	.work-blocks {
 		flex-direction: column;
+		justify-content: space-between;
+		height: 1000px;
 	}
 	.rotated {
 		transform: rotate(90deg);
