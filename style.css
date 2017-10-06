@@ -423,19 +423,47 @@ b {
 	margin-top: 5px;
 }
 
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.col-er {
+	color: gray;
+}
+
+.col-er:hover {
+	color: #fff;
+}
+
 .guarante {
 	width: 700px;
 	font-size: 20px;
 	margin-top: 10px;
 }
 
+.white {
+	color: gray;
+}
+
 .footer {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-end;
 	background: #252525;
-	height: 100px;
+	height: 125px;
+	font-size: 18px;
+}
+
+.footer-main {
+	display: flex;
+	justify-content: space-between;
+	width: 58%;
 }
 
 .policy_conf {
@@ -443,7 +471,21 @@ b {
 	cursor: pointer;
 }
 
+.er12 {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.policy_sogl {
+	color: gray;
+	cursor: pointer;
+}
+
 .policy_conf:hover {
+	color: #fff;
+}
+
+.policy_sogl:hover {
 	color: #fff;
 }
 
@@ -521,6 +563,12 @@ b {
 	border-radius: 15px;
 }
 
+.w90 {
+	height: 225px;
+	margin-top: 3px;
+	border-radius: 3px;
+}
+
 .mw {
 	display: flex;
 	flex-direction: column;
@@ -589,6 +637,54 @@ input {
 	font-size: 20px;
 }
 
+.modal-sogl {
+	position: fixed;
+	width: 80%;
+	height: 80%;
+	top: 5%;
+	left: 10%;
+	background: #fff;
+	overflow-y: scroll;
+	padding: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px 5px gray;
+	display: none;
+	z-index: 10;
+}
+
+.q432 {
+	margin-bottom: 5px;
+}
+
+.footer-main i {
+	margin-right: 5px 
+}
+
+.modal-conf {
+	position: fixed;
+	width: 80%;
+	height: 80%;
+	top: 5%;
+	left: 7.5%;
+	background: #fff;
+	overflow-y: scroll;
+	padding: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px 5px gray;
+	display: none;
+	z-index: 10;
+}
+
+.modal-cap {
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.inf {
+	display: none;
+}
+
 @media screen and (max-width: 1500px) {
 	.full-desc {
 		width: auto;
@@ -612,6 +708,12 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
+	.modal-conf {
+		padding: 15px;
+	}
+	.modal-sogl {
+		padding: 15px;
+	}
 	.character {
 		width: 200px;
 		margin-left: 50px;
@@ -732,6 +834,23 @@ input {
 	}
 	.ers {
 		font-size: 15px !important;
+	}
+	.footer-main {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+	.er12 {
+		text-align: center;
+	}
+	.footer {
+		height: 250px;
+	}
+	.inf {
+		display: block;
+		color: orange;
+		font-size: 24px;
 	}
 }
 

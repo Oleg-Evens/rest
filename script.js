@@ -80,6 +80,8 @@ $(document).ready(function() {
 		$('.blackout').css('display','none');
 		$('.modal-window').css('display','none');
 		$('.time').remove();
+		$('.modal-sogl').css('display','none');
+		$('.modal-conf').css('display','none');
 	})
 	$('.b1').click(function(){
 		$('.blackout').css('display','block');
@@ -118,5 +120,14 @@ $(document).ready(function() {
 	$('.more4').click(function(){
 		body.stop().animate({scrollTop: $(".f4").offset().top}, 1000, 'swing', function() { });
 	});
+
+	$('.policy_conf').click(function(){
+		$('.blackout').css('display','block');
+		$('.modal-sogl').css('display','block');
+	})
+	$('.policy_sogl').click(function(){
+		$('.blackout').css('display','block');
+		$('.modal-conf').css('display','block');
+	})
 });
 
