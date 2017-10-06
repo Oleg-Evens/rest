@@ -201,6 +201,7 @@ b {
 .li-inf {
 	list-style-type: none;
 	margin-left: 15px;
+	color: #fff;
 }
 
 .card-place {
