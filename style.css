@@ -19,7 +19,7 @@
 }
 
 body {
-	overflow-x: hidden;
+
 }
 
 input {
@@ -396,16 +396,6 @@ b {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-}
-
-.man-img-parent::after {
-	content: ' ';
-	position: absolute;
-	top: 0;
-	width: 1px;
-	height: 100px;
-	background: gray;
-	margin-left: 15px;
 }
 
 .comment {
