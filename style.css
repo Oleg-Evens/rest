@@ -991,6 +991,10 @@ input {
 	margin-left: 55px;
 }
 
+.q432:last-child {
+	margin-bottom: 15px;
+}
+
 .footer-main i {
 	margin-right: 5px 
 }
