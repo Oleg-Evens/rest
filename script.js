@@ -72,7 +72,7 @@ $(document).ready(function() {
 			num = 1;
 			return num;
 		} else {
-			$('.header-hidden').css('top','-250px');
+			$('.header-hidden').css('top','-300px');
 			num = 0;
 			return num;
 		}
