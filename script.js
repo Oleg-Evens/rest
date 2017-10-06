@@ -129,6 +129,6 @@ $(document).ready(function() {
 	$('.policy_sogl').click(function(){
 		$('.blackout').css('display','block');
 		$('.modal-conf').css('display','block');
-	})
+	});
 });
 
