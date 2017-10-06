@@ -463,6 +463,10 @@ b {
 	padding-bottom: 25px;
 }
 
+.m7 {
+	height: auto;
+}
+
 .work-block {
 	display: flex; 
 	display: -moz-box; 
@@ -471,13 +475,13 @@ b {
 	display: -webkit-flex;
 	flex-direction: column;
 	align-items: center;
-	height: 200px;
+	height: 220px;
 }
 
 .work-block > .text {
 	width: 175px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 17px;
 	margin-top: 10px;
 }
 
@@ -517,6 +521,7 @@ b {
 }
 
 .comment {
+	font-size: 17px;
 	width: 600px;
 	margin-left: 25px;
 }
@@ -837,6 +842,10 @@ input {
 .text-w {
 	position: relative;
 	font-size: 25px;
+}
+
+.text {
+	font-size: 17px;
 }
 
 .t456 {
