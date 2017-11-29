@@ -190,3 +190,7 @@ $('.header-item-info').on('click',function(){
 		body.stop().animate({scrollTop: $(".main-benefit").offset().top - 50}, 1000, 'swing');
 	}
 });
+
+$('.arrow-top').on('click',function(){
+	body.stop().animate({scrollTop: 0},1000,'swing');
+});
