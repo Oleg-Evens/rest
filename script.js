@@ -148,3 +148,45 @@ $('.policy_sogl').click(function(){
 $(document).ready(function() {
  	$(".input-tel").mask("+7 (999) 999-9999");
 });
+
+setInterval(function(){
+	if($(document).scrollTop() > 50) {
+		$('.header-top').css('background','rgba(0,0,0,0.5)');
+		$('.header-top').css('color','#fff');
+	} else {
+		$('.header-top').css('background','transparent');
+		$('.header-top').css('color','#000');
+	}
+},100);
+
+$('.fa-close').on('click',function() {
+	$('.blackout').css('display','none');
+	$('.modal-window').css('display','none');
+	$('.modal-sogl').css('display','none');
+	$('.modal-conf').css('display','none');
+	$('.modal-window-q').css('display','none');
+})
+
+$('.header-item-info').on('click',function(){
+	if($(this).hasClass('hi1')) {
+		body.stop().animate({scrollTop: $(".main-header").offset().top - 50}, 1000, 'swing');
+	}
+	if($(this).hasClass('hi2')) {
+		body.stop().animate({scrollTop: $(".main-edge").offset().top - 50}, 1000, 'swing');
+	}
+	if($(this).hasClass('hi3')) {
+		body.stop().animate({scrollTop: $(".main-binoculars").offset().top - 50}, 1000, 'swing');
+	}
+	if($(this).hasClass('hi4')) {
+		body.stop().animate({scrollTop: $(".main-structure").offset().top - 50}, 1000, 'swing');
+	}
+	if($(this).hasClass('hi5')) {
+		body.stop().animate({scrollTop: $(".main-review").offset().top - 50}, 1000, 'swing');
+	}
+	if($(this).hasClass('hi6')) {
+		body.stop().animate({scrollTop: $(".main-pay").offset().top - 50}, 1000, 'swing');
+	}
+	if($(this).hasClass('hi7')) {
+		body.stop().animate({scrollTop: $(".main-benefit").offset().top - 50}, 1000, 'swing');
+	}
+});

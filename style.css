@@ -15,6 +15,7 @@ a {
 }
 
 .main-header {
+	padding-top: 75px;
 	width: 100%;
 	display: flex; 
 	display: -moz-box; 
@@ -39,13 +40,27 @@ a {
 }
 
 .header-top {
+	top: 0;
+	position: fixed;
 	width: 100%;
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
 	display: -webkit-box; 
 	display: -webkit-flex;
-	justify-content: space-between;
+	justify-content: center;
+	transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+
+}
+
+.header-item-info {
+	padding: 10px;
+	font-size: 22px;
+	cursor: pointer;
 }
 
 .header-name {
@@ -102,7 +117,7 @@ b {
 	display: -ms-flexbox; 
 	display: -webkit-box; 
 	display: -webkit-flex;
-	justify-content: center;
+	justify-content: flex-end;
 	background: url(img/bg10.jpg);
 	background-size: cover;
 }
@@ -117,6 +132,7 @@ b {
 	flex-direction: column;
 	align-items: center;
 	padding: 15px 0 35px 0;
+	margin-right: 50px;
 }
 
 .edge-name {
@@ -251,7 +267,7 @@ b {
 }
 
 .binoculars {
-	width: 1200px;
+	width: 1300px;
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
@@ -263,7 +279,7 @@ b {
 
 .binoculars-name {
 	font-size: 32px;
-	color: #4e4e4c;
+	color: #000;
 	padding: 15px 0;
 }
 
@@ -340,8 +356,8 @@ ul {
 }
 
 li {
-	font-size: 14px;
-	color: #4e4c4c;
+	font-size: 15px;
+	color: #000;
 	margin-left: 20px;
 	font-weight: normal;
 }
@@ -361,6 +377,19 @@ li {
 	margin-bottom: 15px;
 }
 
+.input-name {
+	width: 100%;
+	height: 40px;
+	font-size: 13px;
+	padding: 0 25px;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
 .input-tel {
 	width: 100%;
 	height: 40px;
@@ -371,7 +400,7 @@ li {
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .order {
@@ -380,8 +409,11 @@ li {
     -webkit-background: linear-gradient(to top, #ef9d2b, #f52620);
 	color: #fff;
 	line-height: 35px;
+	font-weight: bold;
+	font-size: 18px;
 	height: 35px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .footer {
@@ -396,7 +428,7 @@ li {
     display: -webkit-flex;
     justify-content: space-between;
     background: #252525;
-    height: 100px;
+    height: 125px;
     font-size: 18px;
     color: #fff;
 }
@@ -491,6 +523,7 @@ li {
 
 .text-under {
 	text-decoration: line-through;
+	font-size: 20px;
 }
 
 .main-pay {
@@ -666,3 +699,35 @@ li {
 	display: inline;
 }
 
+.fa {
+	color: #fff;
+}
+
+.arrow-top {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background: #000;
+	padding: 15px 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.arrow-top div {
+	margin-bottom: 10px;
+}
+
+.fsbold {
+	font-size: 22px;
+	display: inline-block;
+	color: red;
+	font-weight: bold;
+}
+
+.fa-close {
+	color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
