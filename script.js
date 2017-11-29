@@ -187,10 +187,14 @@ $('.header-item-info').on('click',function(){
 		body.stop().animate({scrollTop: $(".main-pay").offset().top - 50}, 1000, 'swing');
 	}
 	if($(this).hasClass('hi7')) {
-		body.stop().animate({scrollTop: $(".main-benefit").offset().top - 50}, 1000, 'swing');
+		body.stop().animate({scrollTop: $(".main-work").offset().top - 50}, 1000, 'swing');
 	}
 });
 
 $('.arrow-top').on('click',function(){
 	body.stop().animate({scrollTop: 0},1000,'swing');
+});
+
+$('.bars').on('click',function(){
+	$('.header-top').toggleClass('show');
 });
