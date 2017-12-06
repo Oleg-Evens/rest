@@ -50,6 +50,9 @@ $(document).ready(function(){
 		} else {
 			$('.header-main').css('background','#ac4445');
 		}
+		if($('body').width() > 1200) {
+			$('.header-main').css('left','0');
+		}
 	},50)
 	$('.header-item').on('click', function(){
 		if($(this).attr('data-el') == 1) {
@@ -126,5 +129,13 @@ $(document).ready(function(){
 		$('.modal-sogl').css('display','none');
 		$('.modal-conf').css('display','none');
 		$('.blackout').css('display','none');
+	});
+
+	$('.bars').on('click', function(){
+		if($('.header-main').css('left') == '0px') {
+			$('.header-main').css('left','-1000px');
+		} else {
+			$('.header-main').css('left','0');
+		}
 	});
 });
