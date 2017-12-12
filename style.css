@@ -212,7 +212,9 @@ a {
 }
 
 .order {
-	background: #3f8819;
+	background: linear-gradient(to top, #ef9d2b, #f52620);
+    -o-background: linear-gradient(to top, #ef9d2b, #f52620);
+    -webkit-background: linear-gradient(to top, #ef9d2b, #f52620);
 	color: #fff;
 	height: 40px;
 	line-height: 40px;
