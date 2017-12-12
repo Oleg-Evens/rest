@@ -869,12 +869,12 @@ a {
 
 .or {
 	font-size: 30px;
-	color: red;
+	color: #ff4448;
 	text-align: center;
 }
 
 .red {
-	color: #f61a1f;
+	color: #ff4448;
 }
 
 .upder-r {
@@ -996,7 +996,7 @@ a {
 }
 
 .present-compliance {
-	font-size: 14px;
+	font-size: 15px;
 	color: #8c8c8c;
 	margin-left: 5px;
 	font-weight: bold;
@@ -1565,7 +1565,7 @@ iframe {
 .desc-name {
 	font-size: 47px;
 	font-weight: bold;
-	color: red;
+	color: #ff4448;
 	text-align: center;
 }
 
