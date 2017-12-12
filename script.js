@@ -18,7 +18,7 @@ $(document).ready(function(){
 	$('.char-item').on('click', function(){
 		$('.char-item').css('background','#fff');
 		$('.char-item').css('color','#606060');
-		$(this).css('background','#247c34');
+		$(this).css('background','linear-gradient(to top, #ef9d2b, #f52620)');
 		$(this).css('color','#fff');
 		let now = $(this).attr('data-num');
 		$('.char-item-content').css('display','none');
