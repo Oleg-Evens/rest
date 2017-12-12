@@ -1566,12 +1566,17 @@ iframe {
 	color: red;
 	text-align: center;
 }
+
 .desc-text {
 	font-size: 22px;
 	font-weight: bold;
 	color: #fff;
-	margin: 25px 0;
 }
+
+.tes1 {
+	margin-top: 35px;
+}
+
 .desc-desc {
 	font-size: 18px;
 	font-weight: bold;
@@ -1889,6 +1894,10 @@ iframe {
 	width: 275px;
 	border-radius: 7px;
 	display: none;
+}
+
+.ft1 {
+	font-size: 28px !important;
 }
 
 .close-modal-window {
