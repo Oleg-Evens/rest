@@ -893,7 +893,9 @@ a {
 }
 
 .present-order {
-	background: #a42915;
+	background: linear-gradient(to top, #ef9d2b, #f52620);
+    -o-background: linear-gradient(to top, #ef9d2b, #f52620);
+    -webkit-background: linear-gradient(to top, #ef9d2b, #f52620);
 	width: 250px;
 	text-align: center;
 	line-height: 65px;
