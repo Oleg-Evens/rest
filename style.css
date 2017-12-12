@@ -32,6 +32,10 @@ a {
 	display: inline-block;
 }
 
+.line-block {
+	margin-left: 25px;
+}
+
 .aimstock-main {
 	width: 100%;
 	display: flex; 
@@ -237,6 +241,7 @@ a {
 	line-height: 1.4;
 	font-weight: bold;
 	padding-bottom: 15px;
+	text-align: center;
 }
 
 .header-main {
@@ -368,7 +373,7 @@ a {
 }
 
 .bushnell-hit {
-	background: #247c32;
+	background: red;
 	width: 250px;
 	height: 50px;
 	line-height: 50px;
@@ -450,7 +455,7 @@ a {
 	display: -webkit-box; 
 	display: -webkit-flex;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 25px;
 	padding-bottom: 10px;
 }
 
@@ -697,7 +702,11 @@ a {
 	display: -webkit-flex;
 	justify-content: center;
 	padding-top: 25px;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
+}
+
+.img-def {
+	width: 450px;
 }
 
 .how {
@@ -736,6 +745,7 @@ a {
 .how-item {
 	width: 300px;
 	padding: 45px;
+	padding-bottom: 15px;
 	box-sizing: border-box;
 	-o-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -762,12 +772,12 @@ a {
 	font-style: italic;
 	color: #818181;
 	margin: 35px 0;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .how-item-desc {
 	position: relative;
-	font-size: 14px;
+	font-size: 18px;
 	color: #1a1a1a;
 	font-weight: bold;
 	line-height: 1.4;
@@ -847,20 +857,28 @@ a {
 	display: -ms-flexbox; 
 	display: -webkit-box; 
 	display: -webkit-flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 	padding: 15px 0;
 	background: url(img/bgs/present-bg.jpg);
 	background-size: cover;
 }
 
+.or {
+	font-size: 30px;
+	color: red;
+	text-align: center;
+}
+
 .present {
+	width: 1300px;
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
 	display: -webkit-box; 
 	display: -webkit-flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
 }
 
 .present-order {
@@ -883,6 +901,7 @@ a {
 }
 
 .present-blocks {
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -895,6 +914,7 @@ a {
 	width: 600px;
 	margin-left: 15px;
 	margin-right: 15px;
+	text-align: center;
 }
 
 .present-item:first-child {
@@ -1000,8 +1020,8 @@ a {
 }
 
 .aim-modal-catalog {
-	overflow-y: scroll;
 	position: fixed;
+	overflow-y: scroll;
 	width: 1200px;
 	height: 90vh;
 	top: 50%;
@@ -1035,7 +1055,7 @@ a {
 }
 
 .aim-main-img img {
-	width: 350px;
+	width: 450px;
 	margin-top: 25px;
 }
 
@@ -1091,6 +1111,7 @@ a {
 
 .aim-modal-second {
 	margin-top: 25px;
+	margin-left: 25px;
 }
 
 .blackout {
@@ -1111,12 +1132,19 @@ a {
 	cursor: pointer;
 }
 
+.close-inf-e {
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+	cursor: pointer;
+}
+
 .aim-menu-item:first-child {
-	border-bottom: 3px #247c32 solid;
-	-o-border-bottom: 3px #247c32 solid;
-    -ms-border-bottom: 3px #247c32 solid;
-    -moz-border-bottom: 3px #247c32 solid;
-    -webkit-border-bottom: 3px #247c32 solid;
+	border-bottom: 3px red solid;
+	-o-border-bottom: 3px red solid;
+    -ms-border-bottom: 3px red solid;
+    -moz-border-bottom: 3px red solid;
+    -webkit-border-bottom: 3px red solid;
 }
 
 .aim-modal-text {
@@ -1133,13 +1161,12 @@ a {
     -webkit-border: 1px #247c32 solid;
 }
 
-.line-block {
-	display: flex;
-	align-items: center;
-}
-
 iframe {
 	margin-left: 15px;
+}
+
+.modal-text {
+	font-size: 15px;
 }
 
 .modal-conf {
@@ -1735,7 +1762,6 @@ iframe {
 	display: -webkit-box; 
 	display: -webkit-flex;
 	justify-content: center;
-	padding-top: 25px;
 	padding-bottom: 25px;
 	background: #fff;
 	background-size: cover;
@@ -1760,7 +1786,7 @@ iframe {
 }
 
 .answer-text {
-	font-size: 25px;
+	font-size: 28px;
 	font-weight: bold;
 	color: red;
 	text-align: center;
@@ -1772,7 +1798,7 @@ iframe {
 
 .text-author {
 	position: relative;
-	font-size: 19px;
+	font-size: 22px;
 	color: #000;
 	margin-top: 25px;
 }
@@ -1785,7 +1811,7 @@ iframe {
 }
 
 .text-buyer {
-	font-size: 14px;
+	font-size: 17px;
 	color: #000;
 	font-family: Arial;
 	font-style: italic;
@@ -1799,18 +1825,24 @@ iframe {
 .arrow-right {
 	position: fixed;
 	top: 50%;
-	right: -35px;
+	right: 35px;
 	z-index: 15;
 	cursor: pointer;
 	display: none;
+	z-index: 50;
 }
 .arrow-left {
 	position: fixed;
 	top: 50%;
-	left: -35px;
+	left: 35px;
 	z-index: 15;
 	cursor: pointer;
 	display: none;
+	z-index: 50;
+}
+
+.adds-police {
+	margin-bottom: 50px;
 }
 
 .aim-modal-catalog-relative {
@@ -1863,13 +1895,4 @@ iframe {
 	margin-top: 15px;
 	outline: none;
 	padding: 7px;
-}
-
-.blackout {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: rgba(0,0,0,0.5);
 }

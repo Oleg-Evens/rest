@@ -103,7 +103,18 @@ $(document).ready(function(){
 		$('body').css('overflow-y','scroll');
 	});
 
+	$('.close-inf-e').on('click', function(){
+		$('.blackout').css('display','none');
+		$('.aim-modal-catalog').css('display','none');
+		$('.arrow-right').css('display','none');
+		$('.arrow-left').css('display','none');
+		$('.modal-order').css('display','none');
+		$('body').css('overflow-y','scroll');
+	});
+
 	$('.get-more').on('click', function(){
+		$('.arrow-right').css('display','block');
+		$('.arrow-left').css('display','block');
 		$('body').css('overflow','hidden');
 		curr_slide = $(this).attr('data-numed');
 		$('.blackout').css('display','block');
@@ -145,7 +156,7 @@ $(document).ready(function(){
 
 	$('.aim-menu-item').on('click', function() {
 		$('.aim-menu-item').css('border-bottom', '1px gray solid');
-		$(this).css('border-bottom', '3px #2c7d36 solid');
+		$(this).css('border-bottom', '3px red solid');
 		$('.aim-modal-text[data-find="'+$(this).attr('data-find')+'"]');
 		$('.aim-modal-text').css('display','none');
 		$('.aim-modal-text[data-find="'+$(this).attr('data-find')+'"]').css('display','block');
