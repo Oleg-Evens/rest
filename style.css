@@ -1902,6 +1902,10 @@ iframe {
 	z-index: 50;
 }
 
+.text-indent {
+	text-indent: 25px;
+}
+
 .adds-police {
 	margin-bottom: 50px;
 }
