@@ -1288,15 +1288,18 @@ footer {
 
 @media screen and (max-width: 700px) {
 	.lasten {
-		width: 100%;
+		width: 100% !important;
 	}
 	.lasten-videos {
 		flex-direction: column;
 		align-items: center;
 	}
 	.last-video {
-		width: 400px !important;
+		width: 320px !important;
 		margin-top: 45px;
+	}
+	iframe {
+		width: 320px !important;
 	}
 	.input-line {
 		margin-left: 0;
