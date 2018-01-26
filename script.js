@@ -83,3 +83,14 @@ function messages(){
 	},30000)
 }
 messages();
+
+$(document).ready(function() {
+	setInterval(function() {
+		if($(document).width() < 700) {
+			$('iframe input').css('width','100% !important');
+			$('iframe input').css('height','30px !important');
+			$('iframe textarea').css('height','50px !important');
+			$('.f-input').css('height','50px !important');
+		}
+	},1000)
+})

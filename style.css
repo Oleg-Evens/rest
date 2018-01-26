@@ -1303,17 +1303,24 @@ footer {
 		left: 50%;
 		transform: translateX(-50%);
 		width: 100%;
-		top: 5%;
+		top: 0;
+	}
+	.f-input {
+		width: 100% !important;
+		height: 30px !important;
 	}
 	iframe input {
-		width: 100%;
+		width: 100% !important;
 		height: 30px !important;
 	}
 	iframe textarea {
 		height: 50px !important;
 	}
 	iframe button {
-		padding: 3px 6px;
+		padding: 3px 6px !important;
+	}
+	iframe {
+		width: 100% !important;
 	}
 	.ert_img {
 	    width: 95%;
@@ -1329,9 +1336,6 @@ footer {
 	.last-video {
 		width: 320px !important;
 		margin-top: 45px;
-	}
-	iframe {
-		width: 100% !important;
 	}
 	.input-line {
 		margin-left: 0;
