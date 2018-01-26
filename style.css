@@ -95,8 +95,16 @@ body {
 	justify-content: center;
 }
 
+.derterser {
+	transition: .5s;
+}
+
+.derterser:hover {
+	transform: scale(1.05);
+}
+
 .smile1 {
-	transition: 0.5s;
+	transition: .5s;
 	width: 15px;
 }
 
@@ -105,7 +113,7 @@ body {
 }
 
 .smile2 {
-	transition: 0.5s;
+	transition: .5s;
 	width: 15px;
 }
 
@@ -1727,6 +1735,7 @@ footer {
 .ert_img {
 	position: relative;
 	margin-bottom: -30px;
+	overflow: hidden;
 }
 
 /*.ert_img::before {
