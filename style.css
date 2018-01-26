@@ -1362,6 +1362,9 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
+	.ert_styled {
+	    left: -20px !important;
+	}
 	header {
 		padding-top: 5px;
 		font-size: 15px;
