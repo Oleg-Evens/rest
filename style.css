@@ -1296,6 +1296,7 @@ footer {
 }
 
 .close-window {
+	overflow-y: scroll;
 	position: fixed;
 	left: 0;
 	top: 0;
