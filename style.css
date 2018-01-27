@@ -1264,6 +1264,7 @@ footer {
 	z-index: 150;
 	left: 50%;
 	top: 50%;
+	color: #fff !important;
 	transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -1294,6 +1295,15 @@ footer {
 	top: 50%;
 }
 
+.close-window {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: none;
+	color: #000;
+	z-index: 999;
+}
+
 @media screen and (max-width: 700px) {
 	.cont-btn {
 		margin-top: 75px;
@@ -1321,6 +1331,7 @@ footer {
 	}
 	iframe {
 		width: 100% !important;
+		height: 100vh !important;
 	}
 	.ert_img {
 	    width: 95%;

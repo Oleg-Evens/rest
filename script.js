@@ -2,20 +2,35 @@ $('.b1').on('click',function(){
 	$('.blackout').addClass('show');
 	$('.modal-window').removeClass('show-w');
 	$('.mw1').addClass('show-w');
+	if($('body').width() < 500) {
+		$('.close-window').css('display','block');
+	}
 });
 $('.b2').on('click',function(){
 	$('.blackout').addClass('show');
 	$('.modal-window').removeClass('show-w');
 	$('.mw2').addClass('show-w');
+	if($('body').width() < 500) {
+		$('.close-window').css('display','block');
+	}
 });
 $('.b3').on('click',function(){
 	$('.blackout').addClass('show');
 	$('.modal-window').removeClass('show-w');
 	$('.mw3').addClass('show-w');
+	if($('body').width() < 500) {
+		$('.close-window').css('display','block');
+	}
+});
+$('.close-window').on('click', function() {
+	$('.close-window').css('display','none');
+	$('.modal-window').removeClass('show-w');
+	$('.blackout').removeClass('show');
 });
 $('.blackout').on('click',function(){
 	$('.blackout').removeClass('show');
 	$('.modal-window').removeClass('show-w');
+	$('.close-window').css('display','none');
 });
 $('.btn-scroll').on('click',function(){
 	$('body,html').animate({scrollTop:$('.main-leven').offset().top},1500,'swing');
@@ -84,13 +99,27 @@ function messages(){
 }
 messages();
 
-$(document).ready(function() {
-	setInterval(function() {
-		if($(document).width() < 700) {
-			$('iframe input').css('width','100% !important');
-			$('iframe input').css('height','30px !important');
-			$('iframe textarea').css('height','50px !important');
-			$('.f-input').css('height','50px !important');
-		}
-	},1000)
-})
+// $(document).ready(function() {
+// 	$('base').attr('href','https://atlantica.getcourse.ru');
+// 	setInterval(function() {
+// 		if($('html').width() < 700) {
+// 			$("iframe").contents().find("input").css('width','100%');
+// 			$("iframe").contents().find("input").css('height','30px');
+// 			$("iframe").contents().find("textarea").css('height','50px');
+// 			console.log(1);
+// 		}
+// 		console.log(2);
+// 	},1000)
+// })
+
+// window.onload = function() {
+
+// 	var receiver = document.getElementById('receiver').contentWindow;
+// 	receiverWindow.postMessage('hello','https://atlantica.getcourse.ru/pl/lite/widget/widget?&id=19913');
+
+// 	document.getElementById('postMessage').addEventLisenter('click',function() {
+// 		receiverWindow.postMessage('hello','https://atlantica.getcourse.ru/pl/lite/widget/widget?&id=19913');
+// 	});
+
+// };
+
