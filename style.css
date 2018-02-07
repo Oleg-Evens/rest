@@ -277,7 +277,7 @@ header div::before {
 
 .why-block {
 	text-align: center;
-	width: 250px;
+	width: 325px !important;
 }
 
 .escape-block {
@@ -329,7 +329,7 @@ header div::before {
 }
 
 .why-icon-text {
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: bold;
 	line-height: 1.6;
 }
@@ -401,7 +401,7 @@ header div::before {
 }
 
 .message-name {
-	font-size: 35px;
+	font-size: 30px;
 	text-align: center;
 	margin-bottom: 50px;
 	background: #052c45;
@@ -516,6 +516,7 @@ header div::before {
 	font-size: 27px;
 	font-weight: 600;
 	width: 110%;
+	margin-top: 15px;
 }
 
 .can-text-delta-er {
@@ -524,7 +525,7 @@ header div::before {
 	font-size: 20px;
 	font-weight: 600;
 	position: relative;
-	margin-top: 25px;
+	margin-top: 45px;
 }
 
 .er1 {
@@ -569,7 +570,7 @@ header div::before {
 
 .can-text-delta-er:before {
 	position: absolute;
-	left: -75px;
+	left: -85px;
 	top: -4px;
 }
 
@@ -1104,6 +1105,7 @@ b {
 	color: #052c45;
 	font-weight: 600;
 	margin: 50px 0;
+	text-align: center;
 }
 
 .leven-price {
@@ -1354,6 +1356,24 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+	.whatIt-blocks {
+		flex-direction: column;
+	}
+	.whatIt-block {
+		width: 100% !important;
+	}
+	.descr::before {
+		display: none;
+	}
+	.adaptive-video img {
+		width: 100%;
+	}
+	.adaptive-video iframe {
+		top: 12px !important;
+		left: 12px !important;
+		width: 335px !important;
+		height: 190px !important;
+	}
 	.cd_timer {
 		margin-top: 50px !important;
 	}
@@ -2135,6 +2155,7 @@ footer {
 	font-size: 30px;
 	padding: 25px 0;
 	font-weight: bold;
+	margin-top: 10px;
 }
 
 .buss-blocks {
@@ -2163,4 +2184,26 @@ footer {
 	font-weight: 600;
 	margin-top: 35px;
 	line-height: 1.7;
+}
+
+@media screen and (max-width: 700px) {
+	.whatIt-block-text {
+		font-size: 16px;
+		line-height: 3;
+	}
+	.adaptive-video {
+		height: 300px;
+	}
+	.proof-blocks {
+		flex-direction: column;
+	}
+	.proof-block {
+		flex-direction: column;
+	}
+	.buss {
+		width: 100%;
+	}
+	.buss-blocks {
+		flex-direction: column;
+	}
 }
