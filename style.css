@@ -580,7 +580,7 @@ header div::before {
 }
 
 .adds-top {
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 
@@ -2038,10 +2038,18 @@ footer {
 }
 
 .descr {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 1200px;
+}
+
+.descr::before {
+	content: url(img/icons/icon-hands.png);
+	position: absolute;
+	bottom: -80px;
+	right: -50px;
 }
 
 .descr-cap {
