@@ -175,7 +175,6 @@ header {
 	color: #052c45;
 	text-align: center;
 	line-height: 7.5vh;
-	padding: 10px 0;
 }
 
 header div {
@@ -257,7 +256,7 @@ header div::before {
 }
 
 .cont-btn {
-	margin-top: 8vh;
+	margin-top: 14vh;
 	-webkit-animation: b 3s infinite cubic-bezier(.46, .03, .52, .96);
     animation: b 3s infinite cubic-bezier(.46, .03, .52, .96);
     background: #e8393d;
