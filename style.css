@@ -1111,6 +1111,7 @@ b {
 	/*background: url(img/bg/bg4.png);*/
 	background-size: cover;
 	padding: 0 10px 25px 10px;
+	margin-top: 25px;
 }
 
 .main-leven {
@@ -1157,7 +1158,7 @@ b {
 }
 
 .leven-now-price {
-	color: #b70012;
+	color: red;
 	font-size: 25px;
 	font-weight: bold;
 	margin-top: 10px;
@@ -1995,7 +1996,7 @@ footer {
 
 .whatIt-block-secret {
 	position: relative;
-	font-size: 25px;
+	font-size: 22px;
 	margin-top: 65px;
 	font-weight: 600;
 	color: #323435;
@@ -2160,7 +2161,7 @@ footer {
 .buss-blocks {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .buss-block {
@@ -2168,6 +2169,7 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 15px;
+	margin-left: 25px;
 }
 
 .buss-text {
@@ -2204,5 +2206,8 @@ footer {
 	}
 	.buss-blocks {
 		flex-direction: column;
+	}
+	.buss-block {
+		margin-left: 0 !important;
 	}
 }
