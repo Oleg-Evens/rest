@@ -231,6 +231,7 @@ header div::before {
 	text-align: center;
 	line-height: 50px;
 	margin-top: 5vh;
+	z-index: 100;
 }
 
 .btn {
@@ -264,6 +265,12 @@ header div::before {
 }
 
 .content::before {
+	content: url(img/icons/money.png);
+	position: absolute;
+	bottom: 25px;
+}
+
+.content::after {
 	content: url(img/icons/money.png);
 	position: absolute;
 	bottom: 25px;
