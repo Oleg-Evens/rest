@@ -263,6 +263,12 @@ header div::before {
     color: #fff;
 }
 
+.content::before {
+	content: url(img/icons/money.png);
+	position: absolute;
+	bottom: 25px;
+}
+
 .why-blocks {
 	display: flex; 
 	display: -moz-box; 
