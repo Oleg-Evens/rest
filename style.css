@@ -1116,7 +1116,7 @@ b {
 	font-size: 35px;
 	color: #052c45;
 	font-weight: 600;
-	margin: 50px 0;
+	margin: 0 0 50px 0;
 	text-align: center;
 }
 
@@ -1188,7 +1188,6 @@ b {
 	align-items: center;
 	text-align: center;
 	margin: 0 10px;
-	margin-bottom: 25px;
 }
 
 .brd-1 {
@@ -1384,8 +1383,8 @@ footer {
 	.adaptive-video iframe {
 		top: 12px !important;
 		left: 12px !important;
-		width: 335px !important;
-		height: 190px !important;
+		width: 335px;
+		height: 190px;
 	}
 	.cd_timer {
 		margin-top: 50px !important;
@@ -1404,17 +1403,17 @@ footer {
 		width: 100% !important;
 		height: 30px !important;
 	}
-	iframe input {
+	.modal-window iframe input {
 		width: 100% !important;
 		height: 30px !important;
 	}
-	iframe textarea {
+	.modal-window iframe textarea {
 		height: 50px !important;
 	}
-	iframe button {
+	.modal-window iframe button {
 		padding: 3px 6px !important;
 	}
-	iframe {
+	.modal-window iframe {
 		width: 100% !important;
 		height: 100vh !important;
 	}
@@ -2222,5 +2221,17 @@ footer {
 	}
 	.buss-block {
 		margin-left: 0 !important;
+	}
+	.content::before {
+		content: url(img/icons/money-mini-size.png);
+		bottom: 40vh;
+	}
+	.content::after {
+		content: url(img/icons/money-mini-size.png);
+		bottom: 40vh;
+	}
+	.cont-text-cap {
+		padding: 20px 25px;
+		font-size: 20px;
 	}
 }

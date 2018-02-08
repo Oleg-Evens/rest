@@ -123,3 +123,11 @@ messages();
 
 // };
 
+$(document).ready(function() {
+	setInterval(function() {
+		let width = $('.adaptive-video img').width()-25;
+		let height = $('.adaptive-video img').height()*0.675;
+		$('.adaptive-video iframe').css('width',width+'px');
+		$('.adaptive-video iframe').css('height',height+'px');
+	},100);
+});
