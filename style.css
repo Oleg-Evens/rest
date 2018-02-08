@@ -1116,8 +1116,12 @@ b {
 	font-size: 35px;
 	color: #052c45;
 	font-weight: 600;
-	margin: 0 0 50px 0;
+	margin: 15px 0 40px 0;
 	text-align: center;
+}
+
+.leven-name:nth-child(2) {
+	margin: 0 0 40px 0;
 }
 
 .leven-price {
