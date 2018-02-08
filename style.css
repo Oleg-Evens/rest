@@ -431,7 +431,7 @@ header div::before {
 	display: -webkit-box; 
 	display: -webkit-flex;
 	justify-content: center;
-	background: url(img/bg/bg-mess.png);
+	background: url(img/bg/bg10.png);
 	background-size: cover;
 }
 
@@ -712,10 +712,11 @@ b {
 	width: 680px;
 	font-size: 18px;
 	font-weight: bold;
-	margin-left: 45px;
+	margin-left: 225px;
 }
 
 .author {
+	position: relative;
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
@@ -780,8 +781,10 @@ b {
 }
 
 .author-img img {
-	width: 105%;
-	margin-bottom: -15px;
+	position: absolute;
+	width: 24%;
+	bottom: 0;
+	left: 5%;
 } 
 
 .author-desc-over {
@@ -1142,6 +1145,7 @@ b {
 	justify-content: center;
 	background: #fff;
 	background-size: cover;
+	z-index: 5;
 }
 
 .leven {
